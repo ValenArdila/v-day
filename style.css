@@ -5,49 +5,60 @@
 }
 
 body {
-    background-color: #FFE4E8;
+
     font-family: 'Nunito', sans-serif;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-image:
-        radial-gradient(circle at 15% 85%, #ffb3c1 0%, transparent 40%),
-        radial-gradient(circle at 85% 15%, #ff8fa3 0%, transparent 40%),
-        radial-gradient(circle at 50% 50%, #fff0f3 0%, transparent 60%);
+    background-image: url("images/fondo.jpg");
+    background-size: cover;        /* Hace que cubra toda la pantalla */
+    background-position: center;   /* Centra la imagen */
+    background-repeat: no-repeat;  /* Evita que se repita */
 }
 
-/* Floating hearts background */
-.hearts-bg {
+/*Floating hearts */
+.hearts {
     position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
     pointer-events: none;
-    z-index: 0;
     overflow: hidden;
 }
 
-.hearts-bg::before,
-.hearts-bg::after {
-    content: '💕 💗 💖 💝 💓';
+.hearts span {
     position: absolute;
-    font-size: 1.5rem;
-    opacity: 0.15;
-    animation: floatHearts 12s linear infinite;
-    white-space: nowrap;
-    top: 100%;
-    left: 10%;
+    bottom: -50px;
+    font-size: 24px;
+    animation: floatUp 10s linear infinite;
+    opacity: 0.8;
 }
 
-.hearts-bg::after {
-    animation-delay: 6s;
-    left: 60%;
-    content: '💗 💕 💓 💖 💝';
-}
+/* Posiciones aleatorias */
+.hearts span:nth-child(1) { left: 10%; animation-duration: 12s; font-size: 20px; }
+.hearts span:nth-child(2) { left: 25%; animation-duration: 9s; }
+.hearts span:nth-child(3) { left: 40%; animation-duration: 14s; font-size: 30px; }
+.hearts span:nth-child(4) { left: 55%; animation-duration: 11s; }
+.hearts span:nth-child(5) { left: 70%; animation-duration: 13s; font-size: 26px; }
+.hearts span:nth-child(6) { left: 80%; animation-duration: 8s; }
+.hearts span:nth-child(7) { left: 90%; animation-duration: 15s; font-size: 22px; }
+.hearts span:nth-child(8) { left: 60%; animation-duration: 10s; }
 
-@keyframes floatHearts {
-    from { transform: translateY(0); opacity: 0.15; }
-    to { transform: translateY(-110vh); opacity: 0; }
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
 }
 
 .container {
@@ -71,6 +82,7 @@ h1 {
     50% { transform: rotate(1deg); }
 }
 
+
 .gif-container {
     margin: 20px auto;
     display: flex;
@@ -78,9 +90,10 @@ h1 {
 }
 
 #cat-gif {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
     filter: drop-shadow(0 8px 16px rgba(0,0,0,0.15));
     transition: opacity 0.3s ease;
 }
