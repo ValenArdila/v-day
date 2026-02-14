@@ -1,6 +1,6 @@
 const gifStages = [
-    "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDA1N2lrYjM0MXM2NTM2dnQ5NzRlZTMzYXQ0dm52cHlyaW81cWk4ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1202FEj8qyNg3K/giphy.gif",    // 0 normal
-    "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXVkNWFhZWNyNzdmY2MxcnNlejFtdnNuNnBlMXgzdnlqMG0yMGtybCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgkrtsDy4MhLq/giphy.gif",  // 1 confused
+    "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXVkNWFhZWNyNzdmY2MxcnNlejFtdnNuNnBlMXgzdnlqMG0yMGtybCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgkrtsDy4MhLq/giphy.gif",    // 0 normal
+    "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXAzZDB2ZmQ2YjZlNWx3MWQyNDRkNWQ2ZXlncGtxM3hxdXJuNThoOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uWPGqy4rkgllS/giphy.gif",  // 1 confused
     "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXkwZWJnNHh5Mm11NmpwanRibWU4YXAwN2dqZWk0cnd3OTAwZTk2OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Qv7WFppXtkqkM/giphy.gif",             // 2 pleading
     "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3l0emtwcDZkbm43dGJ0b2JkajhjMTN5d2U3OWhvcGFpbzN0ZmZrdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/12Bpme5pTzGmg8/giphy.gif",             // 3 sad
     "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWN5ZDBoa3U3NDVoa3Y5eHBocW5xd2czNzNxZnB3cWN3ZnlidWpoZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U2nN0ridM4lXy/giphy.gif",       // 4 sadder
