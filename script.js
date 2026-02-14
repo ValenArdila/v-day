@@ -16,8 +16,22 @@ const gifStagesYes = [
     "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTh2ajA0aDNsbjI5dGQ3d2s4amhhcG43M3k3NDBzYnh2Ynd5cDk2dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aKXDG5s2Fuzra/giphy.gif"
 
 ]
+
+
+// 🔥 Precargar todos los gifs al iniciar
+function preloadGifs(array) {
+    array.forEach(src => {
+        const img = new Image()
+        img.src = src
+    })
+}
+
+preloadGifs(gifStages)
+preloadGifs(gifStagesYes)
+
+
 const noMessages = [
-    "No",
+    "En serio No???",
     "¿Estás seguro? 🤔",
     "Piensalo otra vez ... 🥺",
     "¿Seguro que no fue un error? 😢",
